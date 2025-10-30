@@ -41,7 +41,7 @@ fileInput.addEventListener('change', (e) => {
             onSuccess: function(tag) {
                 const title = tag.tags.title || file.name.replace(/\.[^/.]+$/, "");
                 const artist = tag.tags.artist || "Desconocido";
-                let img = "/ReNew-Project/src/others/png/musica.png";
+                let img = "src/others/png/musica.png";
 
                 if (tag.tags.picture) {
                     const { data, format } = tag.tags.picture;
